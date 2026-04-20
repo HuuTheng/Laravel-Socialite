@@ -1,0 +1,30 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration {
+    /**
+     * Run the migrations.
+     */
+    public function up()
+    {
+        Schema::table('users', function (Blueprint $table) {
+            $table->string('student_id')->nullable(); // Yêu cầu của bạn
+            $table->string('provider')->nullable();    // google hoặc facebook
+            $table->string('provider_id')->nullable(); // ID từ Google/FB
+            $table->string('avatar')->nullable();
+            $table->string('password')->nullable()->change(); // Cho phép null vì login mxh không cần pass
+        });
+    }
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::table('users', function (Blueprint $table) {
+            //
+        });
+    }
+};
