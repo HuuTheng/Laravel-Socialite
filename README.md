@@ -3,7 +3,7 @@
 Dự án tích hợp đăng nhập mạng xã hội sử dụng Laravel Socialite.
 
 ## 1. Cách cài đặt
-1. Clone dự án: `git clone https://github.com/user/repo.git`
+1. Clone dự án: `git clone https://github.com/HuuTheng/Laravel-Socialite.git`
 2. Cài đặt thư viện: `composer install`
 3. Tạo file .env: `cp .env.example .env`
 4. Tạo key: `php artisan key:generate`
